@@ -35,4 +35,33 @@ $(document).ready(function(){
     }
   });
 
+
+  jQuery('.whatsappBtn').on('click',function(event){
+  jQuery('.whChatSec').toggleClass('wh-active');
+  jQuery('.whTxt').toggleClass('downTooltip');
+  });
+  jQuery('.whtCls').on('click',function(){	
+  jQuery('.whChatSec').removeClass('wh-active');	
+  });
+  if ($(window).width() > 993) {
+  $.fn.scrollEnd = function(callback, timeout) {          
+  jQuery(this).scroll(function(){
+    var $this = jQuery(this);
+    if ($this.data('scrollTimeout')) {
+      clearTimeout($this.data('scrollTimeout'));
+    }
+     $this.data('scrollTimeout', setTimeout(callback,timeout));
+    });
+   };
+   jQuery(window).scroll(function(){
+    jQuery('.whatsappBtn').addClass('wh-close');
+   });
+   jQuery(window).scrollEnd(function(){
+    jQuery('.whatsappBtn').removeClass('wh-close');
+   }, 1800);
+   };
 });
+
+
+
+
