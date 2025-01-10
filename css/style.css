@@ -46,20 +46,24 @@ body{
   width:100%;
   background:#fff;
   z-index: 100;
-  padding:2rem 2rem;
+  padding:0rem 4rem;
   box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
 }
 
 .header .logo img{
-  margin-left: 0px;
-  height: 2rem;
+  margin-left: 20px;
+  block-size: 75px;
 }
 
+.header .logo1 img {
+  margin-left: 10px;
+  block-size: 30px;
+}
 
 .header .logo .CompName{
   font-size: 2rem;
-  color:#000;
-  margin-left: 15px;
+  color:#931e1e;
+  margin-left: 5px;
   vertical-align: middle;
 }
 
@@ -154,7 +158,7 @@ body{
 }
 
 .home .counting .box{
-  margin: 3rem 4rem;
+  margin: 2rem 3rem;
   text-align: center;
 }
 
@@ -173,7 +177,7 @@ body{
   font-size: 4rem;
   text-align: center;
   color:#000;
-  margin:0;
+  margin:2rem;
   padding:10px;
   text-decoration: underline;
   text-decoration-style: solid;
@@ -217,6 +221,9 @@ a {
   width: 15rem;
   color: #fff;
   font-size: 2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 1rem;
 }
 
 .menu .des input[type="button"] {
@@ -224,6 +231,8 @@ a {
   width: 15rem;
   color: #000;
   font-size: 2rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
@@ -246,12 +255,19 @@ a {
 
 .about .image{
   padding:2rem;
+  margin-top: 3rem;
 }
 
 .about .image img{
-  height:45rem;
+  height:55rem;
   object-fit: cover;
   box-shadow: 2.5rem 2.5rem 0 1rem var(--orange);
+}
+
+.about  .row {
+  display: inline;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .about .info{
@@ -340,39 +356,6 @@ a {
   margin:2rem 0;
 }
 
-.project{
-  min-height:100vh;
- /** background:#1c113a; **/
-}
-
-.project .heading{
-  color:#fff;
-}
-
-.project .box-container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.project .box-container .box{
-  height:20rem;
-  width:30rem;
-  border-radius: .5rem;
-  margin:2rem;
-  overflow: hidden;
-  box-shadow: 0 .3rem .5rem #000;
-}
-
-.project .box-container .box img{
-  height:100%;
-  width:100%;
-  object-fit: cover;
-}
-
-.project .box-container .box:hover img{
-  transform: scale(1.3);
-}
 
 .choose{
   min-height: 100vh;
@@ -392,28 +375,37 @@ a {
 
 .choose .image{
   padding:2rem;
+  margin-left: 2rem;
 }
 
 .choose .image img{
-  height:45rem;
+  height:50rem;
   object-fit: cover;
   box-shadow: 2.5rem 2.5rem 0 1rem var(--orange);
 }
 
+.choose  .row {
+  display: inline;
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .choose .info{
   padding:2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+ /* margin-left: -50px; */
 }
 
 .choose .info h2{
   color:var(--orange);
   font-size: 3rem;
+  padding-bottom: 1.5rem;
 }
 
 .choose .info p{
   font-size: 1.4rem;
   color:#000;
-  margin:2rem 0;
+  margin:0.6rem 0;
 }
 
 .choose .info .icons a{
@@ -478,9 +470,9 @@ a {
 }
 
 .contact-box-container .contact-box h3{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color:#fff;
-  margin:2rem 0;
+  margin:2rem 0rem;
 }
 
 .contact .form-container{
@@ -630,13 +622,140 @@ a {
 }
 
 
+input[type=text], textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none; 
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.cntnr-box {
+  padding: 30px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+
+  .modal-content {
+    width: 75%; /* Could be more or less, depending on screen size */
+  }
+  
+}
+
+.fa-times{
+  transform: rotate(180deg);
+}
 
 
 
+.whHdSec::before {
+  position: absolute;
+  content: '\f232';
+  left: 25px;
+  top: 10px;
+  font-family: FontAwesome;
+  font-size: 36px;
+  color: #ffffff;
+  display: inline-block;
+}
 
-
-
-
+.whChatSec.wh-active {
+  display: block;
+  opacity: 1;
+  bottom: 120px;
+  visibility: visible;
+}
 
 .whChatSec {
   right: 35px;
@@ -689,7 +808,7 @@ a {
 }
 
 .small {
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 .mb7px, a.mb7px {
@@ -703,12 +822,31 @@ a {
   will-change: opacity, transform;
 }
 
+.whChatSec.wh-active .whChatList {
+  opacity: 1;
+  transform: translate(0);
+  transition: all .4s ease;
+  transition-delay: 2.1s;
+  transition-delay: .5s;
+}
+
 .whChatList a {
   background: #f5f7f9;
   border-left: 2px solid #2db742;
   padding: 13px 40px 12px 74px;
   text-decoration: none;
   border-radius: 2px 4px 2px 4px;
+}
+
+.whChatList a:before {
+  position: absolute;
+  content: '\f232';
+  left: 25px;
+  top: 1px;
+  font-family: FontAwesome;
+  font-size: 36px;
+  color: #2db742;
+  display: inline-block;
 }
 
 .bsbb {
@@ -725,8 +863,24 @@ a {
   position: relative;
 }
 
+.fw6 {
+  font-weight: 600;
+}
+
+.xxlarge {
+  font-size: 2rem;
+}
+
+.lh13em {
+  line-height: 1.3em;
+}
+
+.mb5px, a.mb5px {
+  margin-bottom: 5px;
+}
+
 .large {
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 .db, .block {
@@ -734,7 +888,12 @@ a {
 }
 
 .small {
-  font-size: 0.9em;
+  font-size: 1.1em;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
 }
 
 .whatsapp-sec {
@@ -787,32 +946,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fa-times{
-  transform: rotate(180deg);
-}
 
 /* media queries  */
 
@@ -889,7 +1022,17 @@ a {
     color: #fff;
   }
 
+  .home .counting .box .count{
+    font-size: 3rem;
+  }
   
+  .home .counting .box h3{
+    font-size: 1.5rem;
+  }
+  
+  .modal-content {
+    width: 75%; 
+  }
 
 }
 
