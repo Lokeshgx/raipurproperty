@@ -51,8 +51,8 @@ body{
 }
 
 .header .logo img{
-  margin-left: 20px;
-  block-size: 75px;
+  block-size: 65px;
+  padding: 5px;;
 }
 
 .header .logo1 img {
@@ -61,10 +61,11 @@ body{
 }
 
 .header .logo .CompName{
-  font-size: 2rem;
-  color:#931e1e;
-  margin-left: 5px;
+  font-size: 3rem;
+  color:#212484;
+  margin-left: 0px;
   vertical-align: middle;
+  font-family: fantasy;
 }
 
 .header nav ul{
@@ -163,7 +164,7 @@ body{
 }
 
 .home .counting .box .count{
-  font-size: 5rem;
+  font-size: 4rem;
   color:#000;
 }
 
@@ -195,7 +196,7 @@ body{
 
 .section-padding {
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 .divider {
@@ -220,20 +221,22 @@ a {
   background: var(--orange);
   width: 15rem;
   color: #fff;
-  font-size: 2rem;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: 1rem;
+  font-size: 1.8rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 2rem;
 }
 
 .menu .des input[type="button"] {
   background: var(--white);
-  width: 15rem;
+  width: 12rem;
   color: #000;
-  font-size: 2rem;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+  font-size: 1.8rem;
+  padding-left: 5px;
+  padding-right: 5px;
+} 
+
+
 
 
 .about-heading{
@@ -543,11 +546,12 @@ a {
 
 .footer .row .logo img{
   height: 4rem;
+  border-radius: 50%;
 }
 
 .footer .row .logo .CompName{
   font-size: 2rem;
-  color:#ff7a00;
+  color:#fff;
 }
 
 
@@ -622,7 +626,7 @@ a {
 }
 
 
-input[type=text], textarea{
+input[type=text], input[type=mobile], input[type=email], textarea{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -633,7 +637,7 @@ input[type=text], textarea{
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: var(--orange);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -945,6 +949,16 @@ a {
   margin-right: 6px;
 }
 
+.button4 {
+  border-radius: 30px;
+  background-color: #ccc;
+  color: #000;
+  padding: 15px;
+  margin: 50px 100px;
+  border: none;
+  cursor: pointer;
+  width: 16%;
+}
 
 
 /* media queries  */
@@ -1023,7 +1037,7 @@ a {
   }
 
   .home .counting .box .count{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .home .counting .box h3{
@@ -1034,6 +1048,8 @@ a {
     width: 75%; 
   }
 
+  .home .counting .box {
+    margin: 2rem 2rem;
+  }
+
 }
-
-
