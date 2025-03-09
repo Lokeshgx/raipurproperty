@@ -722,7 +722,7 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   span.psw {
      display: block;
      float: none;
@@ -1016,7 +1016,7 @@ a {
 
 }
 
-@media (max-width:450px){
+@media (max-width:350px){
   .home .text1{
     font-size: 1rem;
     width: 12rem;
