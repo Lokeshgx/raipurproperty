@@ -24,7 +24,7 @@ body{
   overflow-x: hidden;
   
 }
-
+ /** 
 .heading{
   font-size: 4rem;
   text-align: center;
@@ -36,7 +36,7 @@ body{
   text-decoration-style: solid;
   text-decoration-color: var(--orange);
   text-underline-offset:-1.4rem;
-}
+}*/
 
 .header{
   position: sticky;
@@ -958,12 +958,13 @@ a {
   border: none;
   cursor: pointer;
   width: 16%;
+  font-size: 12px;
 }
 
 
 /* media queries  */
 
-@media (max-width:768px){
+@media  screen and (max-width:768px){
 
   html{
     font-size: 50%;
@@ -1016,7 +1017,7 @@ a {
 
 }
 
-@media (max-width:600px){
+@media  screen and (max-width:600px){
   .home .text1{
     font-size: 1rem;
     width: 12rem;
@@ -1029,8 +1030,19 @@ a {
     top: 15%;
   }
 
+  .header{
+    flex-wrap: wrap;
+    padding:0rem 2rem;
+  }
+
+  .header .logo1 img {
+    margin-left: 10px;
+    block-size: 20px;
+  }
+
   .header .contact-info{
-    display: none;
+    display: inline;
+    margin-bottom: 5px;
   }
   .header nav ul li a{
     color: #fff;
@@ -1052,4 +1064,10 @@ a {
     margin: 2rem 2rem;
   }
 
+  .button4 {
+    width: 45%;
+  }
+
 }
+
+
